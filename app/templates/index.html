@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Робот-патрульный Husky
+		</title>
+		<style>
+			.green_btn{
+				display: block;
+				background: limegreen;
+				width: 100px;
+				height: 50px;
+				font-size: 20px;
+				margin: 5px;
+			}
+			.green_btn:hover{
+				background: red;
+				color: white;
+				font-weight: bold;
+				width: 120px;
+				height: 60px;
+			}
+			.red_btn{
+				display: block;
+				margin: 5px;
+				background: red;
+				width: 100px;
+				height: 50px;
+				font-size: 20px;
+			}
+			.red_btn:hover{
+				background: limegreen;
+				color: white;
+				font-weight: bold;
+				width: 120px;
+				height: 60px;
+			}
+			.row{
+				display: flex;
+			}
+			.col{
+				display: block;
+				margin: 10px;
+				padding: 10px;
+				width: 40%;
+				height: 400px;
+				background: magenta;
+			}
+			.col_button{
+				display: block;
+				margin: 10px;
+				padding: 10px;
+				width: 40%;
+				height: 400px;
+			}
+			.data{
+				display: block;
+				width: 100%;
+				height: 150px;
+				
+			}
+			.col_one_button{
+				margin: 5px;
+				display: block;
+				width: 33%;
+				height: 100px;
+				
+			}
+			.button_navigate{
+				width: 100%;
+				height: 100%;
+				border-radius: 5px;
+				background: skyblue;
+				color: red;
+				font-weight: bold;
+				font-size: 24px;
+			}
+			.btn_function{
+				margin: 5px;
+				width: 100px;
+				height: 50px;
+				background: rgb(0, 255, 114);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col_button">
+				<div class="row">
+					<div class="col_one_button"></div>
+					<div class="col_one_button">
+						<button class="button_navigate">Вперед</button></button>
+					</div>
+					<div class="col_one_button"></div>
+				</div>
+				<div class="row">
+					<div class="col_one_button"><button class="button_navigate">Влево</button></div>
+					<div class="col_one_button"><button class="button_navigate">Стоп</button></div>
+					<div class="col_one_button"><button class="button_navigate">Вправо</button></div>
+					
+				</div>
+				<div class="row">
+					<div class="col_one_button"></div>
+					<div class="col_one_button"><button class="button_navigate">Назад</button></div>
+					<div class="col_one_button"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<button class="btn_function">Фары</button>
+			<button class="btn_function">Сингал</button>
+			<button class="btn_function">Функция 1</button>
+			<button class="btn_function">Функция 2</button>
+				
+		</div>
+		<div class="row">
+					<div class="data">
+						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+					</div>
+		</div>
+
+	</body>
+</html>
