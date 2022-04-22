@@ -1,9 +1,19 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type=text/javascript>
         $(function() {
-          $('a#test').on('click', function(e) {
+          $('a#forvard').on('click', function(e) {
             e.preventDefault()
-            $.getJSON('/background_process_test',
+            $.getJSON('/forvard',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+        $(function() {
+          $('a#resvard').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard',
                 function(data) {
               //do nothing
             });
@@ -12,12 +22,11 @@
         });
 </script>
 
-
-//button
 <div class='container'>
     <h3>Test</h3>
         <form>
-            <a href=# id=test><button class='btn btn-default'>Test</button></a>
+            <a href=# id=forvard><button class='btn btn-default'>Test</button></a>
+            <a href=# id=resvard><button class='btn btn-default'>Test</button></a>
         </form>
         {{servo}}
 
